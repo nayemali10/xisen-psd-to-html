@@ -1,0 +1,59 @@
+// Plan SCSS Code Here 
+.plan {
+    &__item {
+        border: 1px solid $color-2;
+        padding: 30px;
+
+
+        &-top {
+            img {
+                margin-bottom: 7px;
+            }
+        }
+
+        &-price {
+            border-top: 1px solid $color-2;
+            padding-top: 28px;
+            margin-top: 28px;
+
+            .month {
+                color: $gray-color;
+                font-size: 18px;
+                margin-left: -5px;
+            }
+
+            .slace {
+                color: $gray-color;
+            }
+        }
+
+        &-midd {
+            border-bottom: 1px solid $color-2;
+            padding-bottom: 20px;
+            margin-bottom: 35px;
+
+            li {
+                margin-bottom: 10px;
+            }
+        }
+
+        &-btn {
+            a {
+                font-family: $poppins-font;
+                font-weight: 500;
+                color: $black;
+                text-transform: uppercase;
+            }
+        }
+
+        &:hover {
+            @include box-shadow(0px 15px 30px 0px rgba(0, 3, 143, 0.1));
+
+            a {
+                color: $color-1;
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,53 @@
+/*----------------------------------------*/
+/*  01. Variables CSS
+/*----------------------------------------*/
+
+// Font Family
+$poppins-font: 'Poppins', sans-serif;
+$rubik-font: 'Rubik', sans-serif;
+
+
+// Colors ---------------
+$white: #ffffff;
+$white-2: #F5F8FA;
+$gray-color: #7b8491;
+$p-color: #7b8491;
+$black: #1c3354;
+$black-2: #2c303e;
+$color-1: #00c867;
+$color-2: #EAECEE;
+$color-3: #D3D8DD;
+$color-4: #b8bcbf;
+
+
+
+
+$color-gredient: linear-gradient(0deg, rgb(0, 200, 103) 1%, rgb(0, 227, 161) 100%);
+
+
+
+
+// Responsive Variables
+$xxl: ' screen and (min-width: 1600px)';
+
+// Min Width 1200 px 
+$laptop: ' screen and (max-width: 1400px)';
+
+// Min Width 992px 
+$lg : ' screen and (max-width: 1199px)';
+
+$m-md: ' screen and (min-width: 991px)';
+
+// Min Width 768px
+$md: ' screen and (max-width: 991px)';
+
+// Min Width 575px
+$sm: 'screen and (max-width: 767px)';
+
+// Min Widht 425px
+$xs: '(max-width: 575px)';
+
+
+
+// Min Widht 425px
+$xxs: '(max-width: 425px)';

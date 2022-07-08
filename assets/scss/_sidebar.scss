@@ -1,0 +1,50 @@
+.sidebar {
+    &__area {
+        position: fixed;
+        right: -340px;
+        top: 0;
+        width: 320px;
+        height: 100%;
+        background: $black;
+        overflow-y: scroll;
+        -webkit-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+        box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        -moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        z-index: 9999;
+
+        &.sidebar-opened {
+            right: 0px;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        padding: 30px;
+    }
+
+    &__close {
+        margin-bottom: 20px;
+
+        button {
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            line-height: 40px;
+            color: $black;
+            font-size: 20px;
+        }
+    }
+
+}
+
+
+.mobile-menu {
+    .mean-nav {
+        background: $black;
+    }
+
+}

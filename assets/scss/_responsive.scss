@@ -1,0 +1,113 @@
+/*----------------------------------------*/
+/*  Responsive SCSS
+/*----------------------------------------*/
+
+@media #{$xxl} {
+    .container {
+        max-width: 1165px;
+    }
+}
+
+@media #{$laptop} {
+
+    .menu {
+        margin-right: 50px;
+
+        li {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }
+
+    .platform__thumb {
+        margin-left: 0px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .info__thumb img {
+        width: 100%;
+    }
+
+    .client__slider .owl-dots {
+        top: -50px;
+        right: 50px;
+    }
+
+    .cta__form .x-btn {
+        padding: 35px 30px;
+    }
+}
+
+
+
+@media #{$lg} {}
+
+
+@media #{$m-md} {}
+
+
+@media #{$md} {
+    h2 {
+        font-size: 40px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .header__area {
+        padding: 10px 0;
+    }
+
+    .slider__height {
+        min-height: 750px;
+    }
+
+    .sticky {
+        padding: 10px 0;
+    }
+}
+
+// Min Width 575px 
+@media #{$sm} {}
+
+@media #{$xs} {
+
+    .sidebar__area {
+        width: 290px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .slider__height {
+        min-height: 650px;
+    }
+
+    .slider__content {
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    .footer__menu {
+        text-align: start;
+
+        ul li {
+            display: inline-block;
+            margin-left: 15px;
+        }
+    }
+}
+
+
+@media #{$xxs} {}

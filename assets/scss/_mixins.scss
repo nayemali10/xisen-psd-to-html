@@ -1,0 +1,24 @@
+/*----------------------------------------*/
+/*  02. Mixins CSS
+/*----------------------------------------*/
+
+@mixin transition($time) {
+	-webkit-transition: all $time ease-out 0s;
+	-moz-transition: all $time ease-out 0s;
+	-ms-transition: all $time ease-out 0s;
+	-o-transition: all $time ease-out 0s;
+	transition: all $time ease-out 0s;
+}
+
+@mixin transform($value) {
+	-webkit-transform: $value;
+	-ms-transform: $value;
+	transform: $value;
+}
+
+
+@mixin box-shadow($value) {
+	-webkit-box-shadow: $value;
+	-ms-box-shadow: $value;
+	box-shadow: $value;
+}

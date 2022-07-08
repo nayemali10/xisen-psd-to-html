@@ -1,0 +1,17 @@
+// Slider SCSS Code Here 
+
+.slider {
+    &__height {
+        min-height: 890px;
+    }
+
+    &__content {
+        h1 {
+            margin-bottom: 35px;
+
+            span {
+                color: $color-1;
+            }
+        }
+    }
+}

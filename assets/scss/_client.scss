@@ -1,0 +1,37 @@
+// Client SCSS Code Here 
+.client {
+    &__slider {
+        .owl-dots {
+            position: absolute;
+            bottom: 58px;
+            right: 33.5%;
+
+            .owl-dot {
+                width: 20px;
+                height: 4px;
+                background: $color-3;
+                display: inline-block;
+                margin: 0 3px;
+
+                &.active {
+                    background: $color-gredient;
+                }
+            }
+        }
+    }
+
+    &__content {
+        h2 {
+            margin-bottom: 40px;
+        }
+
+        &-info {
+            margin-top: 45px;
+
+            h4 {
+                margin-bottom: 2px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

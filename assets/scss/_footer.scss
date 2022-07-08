@@ -1,0 +1,55 @@
+// Footer SCSS Code Here 
+.footer {
+    &__widget {
+        &-content {
+            li {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    &__menu {
+        text-align: right;
+
+        ul {
+            li {
+                display: inline-block;
+                margin-left: 40px;
+            }
+        }
+    }
+
+    &__copyright {
+        border-top: 1px solid $color-2;
+        padding: 25px 0px;
+
+        .copy__text {
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.back__top {
+    background: $color-gredient;
+    height: 45px;
+    width: 46px;
+    right: 30px;
+    bottom: 44px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 45px;
+    position: fixed;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 400;
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+}

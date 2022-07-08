@@ -1,0 +1,134 @@
+// Header SCSS Code Here
+
+.header {
+    &__padding {
+        padding: 10px 0;
+    }
+
+    &__area {
+        z-index: 100;
+
+        .logo__text {
+            display: none;
+        }
+    }
+
+    &__transparent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.header__sticky.sticky {
+    .logo__text {
+        display: block;
+
+        h3 {
+            color: $white;
+        }
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu {
+        li {
+            a {
+                color: $white;
+            }
+
+            li {
+                a {
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    .cta-btn {
+        a {
+            color: $white;
+        }
+    }
+}
+
+
+
+.menu {
+    margin-right: 140px;
+
+    li {
+        display: inline-block;
+        margin-left: 40px;
+        position: relative;
+
+        a {
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 500;
+            color: $black-2;
+            display: block;
+            padding: 35px 0px;
+        }
+
+        ul {
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            background: $white;
+            width: 250px;
+            padding: 25px;
+            border-top: 3px solid $color-1;
+            opacity: 0;
+            visibility: hidden;
+            left: -100px;
+            border-left: 1px solid $color-2;
+            border-right: 1px solid $color-2;
+            border-bottom: 1px solid $color-2;
+
+            li {
+                margin-left: 0px;
+                display: block;
+                margin-bottom: 16px;
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+
+                a {
+                    padding: 0;
+                }
+            }
+        }
+
+        &:hover> {
+            a {
+                color: $color-1
+            }
+        }
+
+
+        &:hover ul {
+            left: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+
+    }
+
+    &__sidebar {
+        margin-left: 30px;
+        cursor: pointer;
+
+        .sidebar-toggle-btn span {
+            width: 40px;
+            height: 4px;
+            display: block;
+            background: $color-gredient;
+            margin: 5px 0;
+        }
+    }
+}

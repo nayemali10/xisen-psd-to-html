@@ -1,0 +1,16 @@
+// Partner SCSS Code Here 
+.partner {
+    &__slider {
+        .owl-stage {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        img {
+            width: auto !important;
+            margin: auto;
+        }
+    }
+}

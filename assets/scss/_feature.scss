@@ -1,0 +1,40 @@
+// Features SCSS Code Here 
+.feature {
+    &__item {
+        position: relative;
+        z-index: 1;
+        padding: 60px 30px;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 0%;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: $color-1;
+            position: absolute;
+            z-index: -1;
+        }
+
+        &:hover {
+            .feature__item-content {
+
+                p,
+                h4 {
+                    color: $white;
+                }
+            }
+
+            &::before {
+                height: 100%;
+            }
+        }
+    }
+
+    &__item-content {
+        h4 {
+            margin-bottom: 25px;
+        }
+    }
+}
